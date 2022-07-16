@@ -1,0 +1,9 @@
+
+<nav>
+    <a href="{% url 'horoscope_index' %}">MAINE</a>
+    <a href="https://www.youtube.com/watch?v=JkUNSLEF6cM&list=PLQAt0m1f9OHvGM7Y7jAQP8TKbBd3up4K2&index=29">SOURCE</a>
+    {% for zodi in zodiaks %}
+        <a href="{% url 'horoscope-name' sign_zodiak=zodi %}">{{ zodi|title }}</a>
+    {% endfor %}
+
+</nav>
